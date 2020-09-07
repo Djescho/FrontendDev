@@ -1,5 +1,84 @@
 /* CSS Document */
 *, *::after, *::before {
   box-sizing:border-box;  
+    margin: 0;
+    padding: 0;
 }
-
+body {
+    font-family: 'Arial';
+}
+nav {
+    
+}
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+ul li {
+    list-style: none;
+}
+input {
+    border-radius: 10em;
+    padding: 20px;
+}
+.topbar {
+    padding: 4px 0px;
+    font-size: .8em;
+    color: #0000A4;
+}
+.topbar span {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.topbar li:last-of-type {
+    color: rgb(5, 172, 58);
+}
+.mainnav {
+    padding: 20px 0;
+    background-color: #0000A4;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.mainnav img {
+    height: 42px;
+}
+.mainnav input {
+    width: 40vw;
+    height: 42px;
+}
+.mainnav ul{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.secondnav {
+    padding: 15px 0px;
+    font-weight: 300;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondnav ul {
+    padding: 0px 10px;
+}
+.secondnav li {
+    padding: 0px 15px;
+}
+.secondnav ul:last-of-type {
+    font-size: .8em;
+}
+.thirdnav {
+    background-color: #F0F6FF;
+    height: 25.5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: .85em;
+    padding: 4px 8px;
+}
+.thirdnav li {
+    padding: 0px 12px;
+}
