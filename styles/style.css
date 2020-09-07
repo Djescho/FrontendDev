@@ -1,4 +1,6 @@
 /* CSS Document */
+
+/*PRESETS*/
 *, *::after, *::before {
   box-sizing:border-box;  
     margin: 0;
@@ -7,7 +9,7 @@
 body {
     font-family: 'Arial';
 }
-nav {
+nav{
     
 }
 ul {
@@ -17,12 +19,24 @@ ul {
 ul li {
     list-style: none;
 }
-input {
-    border-radius: 10em;
-    padding: 20px;
+a {
+    text-decoration: none;
+    color: inherit;
 }
+h3 {
+    font-weight: 600;
+}
+h4{
+    font-weight: 100;
+    font-size: .95em;
+}
+/*De topbar van de website*/
+
 .topbar {
-    padding: 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 10vw;
     font-size: .8em;
     color: #0000A4;
 }
@@ -30,15 +44,22 @@ input {
     font-weight: 700;
     font-size: 1.1em;
 }
-.topbar li:last-of-type {
-    color: rgb(5, 172, 58);
+.topbar ul:first-of-type li{
+    padding-right: 20px;
 }
+.topbar ul:last-of-type li{
+    color: rgb(5, 172, 58);
+    
+}
+
+/*de blauwe navigatie balk bovenin*/
+
 .mainnav {
-    padding: 20px 0;
+    padding: 10px 10vw;
     background-color: #0000A4;
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 .mainnav img {
@@ -47,29 +68,69 @@ input {
 .mainnav input {
     width: 40vw;
     height: 42px;
+    border-radius: 10em;
+    padding: 20px;
 }
 .mainnav ul{
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    font-size: .8em;
+    font-weight: 400;
     
 }
+.mainnav ul li {
+    margin-left: 2.2em;
+}
+.mainnav ul li img {
+    width: 2em;
+    height: auto;
+}
+
+/*tweede navigatie balk*/
+
 .secondnav {
-    padding: 15px 0px;
-    font-weight: 300;
+    padding: 15px 10vw;
+    
     color: #333;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.secondnav img {
+    width: 1.32em;
+    height: auto;
+    transform: rotate(90deg);
+    margin-left: .5em;
+}
+.secondnav img:last-of-type {
+    width: 1em;
+    height: auto;
+    transform: rotate(90deg);
+}
 .secondnav ul {
-    padding: 0px 10px;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    align-items: center;
 }
 .secondnav li {
-    padding: 0px 15px;
+    padding-right: 3em;
+    display: flex;
+    align-items: center;
+/*    font-weight: 100; werkt hier niet?*/
 }
+.secondnav ul:last-of-type li:last-of-type {
+    padding-right: 0px;
+    
+}
+
 .secondnav ul:last-of-type {
     font-size: .8em;
+    padding-right: 1.4em;
 }
+
+/*laatste navigatie balk in de header*/
+
 .thirdnav {
     background-color: #F0F6FF;
     height: 25.5px;
@@ -77,8 +138,104 @@ input {
     justify-content: flex-end;
     align-items: center;
     font-size: .85em;
-    padding: 4px 8px;
+    padding: 4px 10vw;
 }
 .thirdnav li {
-    padding: 0px 12px;
+    padding-left: 12px;
 }
+
+/*nu naar de main*/
+
+main {
+    margin-top: 20px;
+    padding: 0 10vw;
+    height: 200vh;
+}
+section {
+    position: relative;
+    
+}
+section:first-of-type img{
+    
+    max-width: 100%;
+    min-width: 100%;
+    z-index: 0;
+}
+section:first-of-type button {
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    z-index: 100;
+    padding: 20px 30px;
+    font-size: 1.15em;
+    color: white;
+    background-color: rgb(0, 0, 254);
+    border-style: none;
+    border-radius: 5px;
+    font-weight: 300;
+/*    ik krijg het niet voor elkaar om de button mee te laten groeien met de afbeelding (de button zit er op gefotoshopt op de echte site)*/
+}
+section:nth-of-type(2) {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+.container {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(220, 238, 255);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    overflow: hidden;
+}
+.container img:first-of-type {
+    z-index: 50;
+    width: 150%;
+    bottom: 0px;
+}
+.container button {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    z-index: 100;
+    width: 2.15em;
+    height: auto;
+    background-color: rgb(0, 0, 254);
+    border-style: none;
+    border-radius: 5px;
+    padding: 1em 1.65em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container button img {
+    height: 1.2em;
+    z-index: 150;
+}
+.containerTitle {
+    color: rgb(0, 0, 164);
+    text-align: left;
+    position: absolute;
+    top: 1.85em;
+    left: 1.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
