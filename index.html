@@ -3,10 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="jouw naam">
+    <meta name="author" content="Djescho Mananga">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>bol.com | de winkel van ons allemaal</title>
+    <title>Bol.com | de winkel van ons allemaal</title>
 
     <link href="./styles/style.css" rel="stylesheet" type="text/css">
 </head>
@@ -14,78 +14,52 @@
 <body>
     <header>
         <nav>
-            <div class="topbar">
-                <ul>
-                    <li><span>Gratis</span> verzending vanaf 20,-</li>
-                    <li>Bezorging dezelfde dag, 's avonds of in het weekend*</li>
-                    <li><span>Gratis</span> Retourneren</li>
-                </ul>
-                <ul>
-                    <li><span>Select</span> Ontdek het nu voor 9,99 p.j.</li>
-                </ul>
+            <div>
+                <button>
+                    <img src="./images/icons/MenuIcoon.svg" alt="menu knop" class="icon">
+                </button>
+                <a href="#"><img src="./images/icons/LogoBlauw-01.png" alt="bol.com logo"></a>
             </div>
-            <div class="mainnav">
-                <img src="./images/live/bol_logo_white.png" alt="bol.com logo">
-                <input type="text" id="search" name="search" placeholder="waar ben je naar op zoek?">
-                <ul>
-                    <li>Inloggen</li>
-                    <li><img src="./images/live/icons/heart.svg" alt="verlanglijstje" height="21" width="21"></li>
-                    <li><img src="./images/live/icons/supermarket.svg" alt="winkelwagen" height="21" width="21"></li>
-                </ul>
-            </div>
-            <div class="secondnav">
-                <ul>
-                    <li>Catergorien <img src="./images/live/icons/arrowGrey.svg" alt=""></li>
-                    <li>Cadeaus  Inspriatie <img src="./images/live/icons/arrowGrey.svg" alt=""></li>
-                    <li>Aanbiedingen <img src="./images/live/icons/arrowGrey.svg" alt=""></li>
-                </ul>
-                <ul>
-                    <li>Zakelijk</li>
-                    <li>Cadeaukaart</li>
-                    <li>Bestelstatus</li>
-                    <li>Klantenservice</li>
-                    <li>NL<img src="./images/live/icons/arrowGrey.svg" alt=""></li>
-                </ul>
-            </div>
-            <div class="thirdnav">
-                    <ul>
-                        <li>Outlet</li>
-                        <li>Beauty deals</li>
-<!--                        lekker consistent bol.com...-->
-                        <li>Select-deals</li>
-                        <li>Gezien in LINDA.</li>
-                        <li id="seasonSale">Alles voor je sudie</li>
-                    </ul>
-            </div>
+
+
+            <ul>
+                <li><a href="#"><img src="./images/icons/MijnAccountBlauw.svg" alt="mijn account icoon" class="icon"></a></li>
+                <li><a href="#"><img src="./images/icons/HartBlauw.svg" alt="mijn favoriten icoon" class="icon"></a></li>
+                <li><a href="#"><img src="./images/icons/WinkelwagenBlauw.svg" alt="mijn winkelwagen icoon" class="icon"></a></li>
+            </ul>
         </nav>
+        <form action="get">
+            <input type="search" placeholder="Waar bent u naar op zoek?">
+        </form>
+        <img src="./images/mobileHero.JPG" alt="">
     </header>
+
     <main>
-        <section>
-            <img src="./images/live/banner.jpg" alt="">
-            <button>Bekijk nu alle deals</button>
-        </section>
-        
-        <section>
-            <div class="container">
-             <div class="containerTitle">
-                 <h3>De nieuwste mode</h3>
-              <h4>voor dames</h4>
-             </div>
-              
-               <img src="./images/live/ContainerA.jpg" alt="">
-                <button><img src="./images/live/icons/arrowWhite.svg" alt=""></button>
-            </div>
-            <div class="containerA">
-                
-            </div>
-            <div class="containerA">
-                
-            </div>
-            <div class="containerA">
-                
+        <section class="promoSlider">
+            <ul>
+                <li>
+                    <h3>De nieuwste mode <span>voor dames</span></h3>
+                    <a href="#"><img src="./images/WinterCoat.jpg" alt="Dame met lange stoffe winterjas aan."></a>
+                    <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt=""></a>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="slidersButtons">
+                <button>
+                    <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
+                </button>
+                <button>
+                    <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
+                </button>
             </div>
         </section>
     </main>
+
     <footer>
 
     </footer>
