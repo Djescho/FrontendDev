@@ -8,16 +8,52 @@
 /*bol.com cta blauw: #0000FE*/
 /*****/
 
+
+/*GLOBAL ELEMENT STYLES*/
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/*SLIDERBUTTONS*/
+
+section button {
+    top: 50%;
+    position: absolute;
+    padding: .65em;
+    background-color: #FFFFFF;
+    box-shadow: 7px 7px 15px -5px rgba(0,0,0,0.64);
+    border: none;
+    border-radius: 2px;
+    z-index: 100;
+    left: -1em;
+}
+section button img {
+    width: 1em;
+    height: auto;
+    z-index: 150;
+    transform: rotate(180deg);
+}
+section button:last-child {
+    left: calc(100% - 1em);
+}
+section button:last-child img{
+    transform: rotate(0deg);
+}
+
+/*BODY*/
+
 body {
     font-family: 'Avenir', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
-    overflow-y: hidden;
-}
-header {
     
 }
+
+/*HEADER*/
+
 header nav {
     display: flex;
     justify-content: space-between;
@@ -73,18 +109,23 @@ header img {
     width: 100vw;
 }
 
-/*****************************/
+/*MAIN*/
 
-main .promoSlider {
-    padding: .1em 1em;
+main {
+    padding: 0 1em;
+    
+}
+
+/*SECTIE1*/
+
+main section {
+    padding: .1em 0;
     color: #0000A4;
     position: relative;
 }
 main .promoSlider ul {
     overflow: scroll;
     display: flex;
-    list-style: none;
-    padding-left: 0;
 }
 main .promoSlider ul li {
     position: relative;
@@ -125,31 +166,27 @@ main .promoSlider ul li a img {
     width: .9em;
     height: auto;
 }
-main .promoSlider button {
-    padding: .65em;
-    position: fixed;
-    background-color: #FFFFFF;
-    box-shadow: 7px 7px 15px -5px rgba(0,0,0,0.64);
-    border: none;
-    border-radius: 2px;
-    z-index: 100;
-    
-}
-main .promoSlider button img {
-    width: 1em;
-    height: auto;
-    z-index: 150;
-}
-main .promoSlider button:first-of-type {
-    top: 50%;
-    left: 0;
-}
-main .promoSlider button:last-of-type {
-    top: 50%;
-    right: 0;
-}
-main .promoSlider button:first-of-type img {
-    transform: rotate(180deg);
+
+/*SECTIE2*/
+
+main .catSlider {
+    color: black;
 }
 
-/*tweede sectie*/
+main .catSlider ul {
+    display: flex;
+    overflow: scroll;
+}
+main .catSlider ul li {
+    margin-right: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+main .catSlider ul li img {
+    width: 10em;
+    height: 10em;
+    background-color: aqua;
+}
+
+/**/
