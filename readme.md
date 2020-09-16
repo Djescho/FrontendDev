@@ -47,7 +47,17 @@ Het leukste vind ik het netjes maken van mijn HTML/CSS. Ik vind het een hele leu
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+Agenda 17/8
+Celine, Floris en Djescho
+
+Dingen die we behandeld willen hebben:
+
+- Responsive design (breakpoint) [Djescho]
+- Scrollen met javascricpt [Djescho]
+- Main en header vouwen inelkaar over de hero heen [Celine]
+- Afbeeldingen in CSS [Floris en Djescho]
+- wel goed doen [Djescho]
+- Lege plek [Floris]
 
 ### Verslag van meeting
 
