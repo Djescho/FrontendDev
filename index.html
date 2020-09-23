@@ -15,8 +15,8 @@
     <header>
         <nav>
             <div>
-                <button>
-                    <img src="./images/icons/MenuIcoon.svg" alt="menu knop" class="icon">
+                <button class="menuOpenButton">
+                    <img src="./images/icons/MenuIcoon.svg" alt="menu knop" id="menuButton">
                 </button>
                 <a href="#"><img src="./images/icons/LogoBlauw-01.png" alt="bol.com logo"></a>
             </div>
@@ -59,7 +59,7 @@
         <section class="catSlider">
             <h2>Kies een categorie</h2>
             <ul>
-                <li><img src="./images/test.jpg" alt="">
+                <li id="catBlok1"><img src="./images/test.jpg" alt="">
                     <h4>Categrorie A</h4>
                 </li>
                 <li><img src="" alt="">
@@ -153,34 +153,118 @@
             </button>
 
         </section>
-        
-        
-        
+
+
+
+
         <section class="sideMenu">
-          <div>
-              <img src="./images/icons/kruis.svg" alt="">
-          </div>
-           <ul>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-               <li><img src="" alt=""><h5>CatA</h5></li>
-           </ul>
-            
+            <div>
+                <img class="closeButton" src="./images/icons/kruis.svg" alt="">
+            </div>
+            <ul>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>CatA</h4>
+                </li>
+            </ul>
+
         </section>
+
+
+        <section class="service">
+            <ul>
+                <li>
+                    <h2>Service &#38; contact</h2>
+                </li>
+
+                <li>
+                    <img src="./images/icons/MijnAccountWit.svg" alt="">
+                    <div>
+                        <h5>Snel regelen in je account</h5>
+                        <p><a href="#">volg je bestelling</a>, <a href="#">betaal facturen</a> of <a href="#">retourneer een artikel</a>.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./images/icons/ChatIcoon.svg" alt="">
+                    <div>
+                        <h5>Het je ons nodig?</h5>
+                        <p>We helpen je graag. <a href="#">Onze klantenservice</a> is dag en nacht open.</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
     </main>
 
     <footer>
-
+       
+        <ul>
+            <li><a href="">Klantenservice</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
+            <li><a href="">Over bol.com</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
+            <li><a href="">Zakendoen met bol.com</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
+        </ul>
+        <section class="social">
+            <h5>Wil je ons volgen?</h5>
+            <ul>
+                <li><a href="#"><img src="./images/icons/social/facebook.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/icons/social/youtube.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/icons/social/instagram.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/icons/social/pinterest.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/icons/social/linkedin.svg" alt=""></a></li>
+                <li><a href="#"><img src="./images/icons/social/twitter-1.svg" alt=""></a></li>
+<!--                Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+            </ul>
+            <p><a href="">Meld je aan</a> voor onze nieuwsbrief</p>
+        </section>
+        
+        <img class="footerlogo" src="./images/icons/LogoBlauwTekst.jpg" alt="">
+<!--        bron afbeelding: https://pers.bol.com/beeld-archief-item/logo-bol-com-pay-off-rgb/-->
+        
+        <section class="winkelwaarborg">
+           <ul>
+               <li><img src="./images/icons/thuiswinkelLogo.png" alt=""> Geldt voor aankopen bij <a href=""> Thuiswinkel-leden</a></li>
+               <li>| <a href=""> Algemene Voorwaarden </a></li>
+               <li>| <a href=""> Privacy </a></li>
+               <li>| <a href=""> cookies </a></li>
+               <li>| <a href=""> Trademark</a></li>
+           </ul>
+            
+        </section>
     </footer>
     <script src="scripts/script.js"></script>
 </body>

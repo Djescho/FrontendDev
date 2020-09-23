@@ -53,7 +53,6 @@ body {
 }
 
 /*HEADER*/
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -65,17 +64,17 @@ header nav div {
     display: flex;
     align-items: center;
 }
-header div button {
+header nav div button {
     height: 1.9em;
     border-style: none;
     background-color: transparent;
 }
-header div button img {
-    height: 100%;
+header nav div button img {
+    height: 1.5em;
     width: auto;
 }
 
-header div a img {
+header nav div a img {
     height: 1.9em;
     width: auto;
 }
@@ -100,14 +99,15 @@ header form {
 header form input {
     width: 100%;
     height: 3em;
-    padding-left: 1em;
+    padding-left: 1.1em;
     border-radius: 1.5em;
     border-style: none;
-    font-size: 1.1em;
+    font-size: .9em;
 }
 header img {
-    width: 100vw;
+    width: 100%;
 }
+
 
 /*MAIN*/
 
@@ -151,8 +151,14 @@ main .promoSlider ul li span{
 }
 main .promoSlider ul li img {
     width: 100%;
-/*    ik krijg het niet voor elkaar om de afbeelding ingezoomd te krijgen en vind fotoshop een beetje goedkoop*/
 }
+/*    ik krijg het niet voor elkaar om de afbeelding ingezoomd te krijgen en vind fotoshop een beetje goedkoop*/
+main .promoSlider ul li a img {
+    margin-top: 0;
+    width: 100%;
+    height: auto;
+}
+
 .productButton {
     padding: .3em .5em;
     border-radius: 2px;
@@ -160,18 +166,17 @@ main .promoSlider ul li img {
     background-color: #0000FE;
     bottom: 1em;
     left: 1em;
+    width: 1.7em;
+    height: 1.7em;
     
 }
-main .promoSlider ul li a img {
-    margin-top: 0;
-    width: .9em;
-    height: auto;
-}
+
 
 /*SECTIE2*/
 
 main .catSlider {
     color: black;
+/*    scrollsnap*/
 }
 
 main .catSlider ul {
@@ -190,20 +195,25 @@ main .catSlider ul li img {
     background-color: aqua;
 }
 
-/**/
+/*Service*/
 
 /*MENU*/
+
 .sideMenu {
-/*    position: fixed;*/
+    position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
-    max-width: 100%;
+    right: 0;
     height: 100%;
     z-index: 300;
     background-color: #ffffff;
+    transition: .3s;
+    transform: translateX(-100%);
 }
-
+.sideMenuOpen {
+    transform: translateX(0);
+    
+}
 .sideMenu div {
     padding: 1em 0;
     display: flex;
@@ -213,7 +223,6 @@ main .catSlider ul li img {
     border-color: #1A1AB1;
     border-width: 2px;
     width: 100%;
-    
     
 }
 .sideMenu div img {
@@ -241,3 +250,149 @@ main .catSlider ul li img {
     background-color: #CEE9FC;
     padding: 1em;
 }
+/*FOOTER*/
+
+/*SERVICE*/
+.service {
+    position: static;
+    color: white;
+    background-color: #0000A4;
+    padding: 1em 1em;
+    margin: 0 -1em;
+}
+.service ul {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.service ul li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.5em;
+    
+}
+.service ul li img {
+    height: 2.9em;
+    padding: 0 2em;
+}
+.service ul li div {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    max-width: 30em;
+}
+.service ul li div h5 {
+    font-size: .9em;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    
+}
+.service ul li div p {
+    font-size: .9em;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+.service ul li div p a {
+    color: white;
+}
+footer {
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}
+footer ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2em;
+    max-width: 100%;
+    border-bottom-style: solid;
+    border-color: #333333;
+    border-width: 1px;
+    
+    
+}
+.social {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.social ul {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    list-style: none;
+}
+.social ul li {
+    border-bottom-style: none;
+}
+.social ul li a {
+    text-decoration: none;
+}
+.social ul li a img {
+    width: auto;
+    height: 1.6em;
+    margin: 0 .4em;
+}
+
+footer .footerlogo {
+    width: 20em;
+}
+
+.winkelwaarborg {
+    font-size: .8em;
+    padding: 0 3em;
+}
+.winkelwaarborg ul {
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    flex-wrap: wrap;
+    
+}
+.winkelwaarborg ul li {
+    display: flex;
+    align-items: center;
+    margin: 1 1em;
+    
+    border-bottom-style: none;
+    
+}
+.winkelwaarborg ul li img{
+    margin-right: .6em;
+    height: 1.4em;
+    width: auto;
+}
+.winkelwaarborg ul li a{
+    text-decoration: none;
+    padding: 0 .4em;
+}
+
+.winkelwaarborg ul li a:first-of-type {
+    text-decoration: underline;
+}
+.winkelwaarborg {
+    
+}
+/*tip: punten aanpassen per site sectie*/
+
+/*
+@media (min-width: 600px) {
+    header img:last-of-type {
+        margin: 2em;
+    }
+    main {
+        padding: 0 1em;
+    }
+    main .catSlider ul li img {
+    width: 6em;
+    height: 6em;
+    }
+}
+@media (min-width: 900px) {
+    
+}*/
