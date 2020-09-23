@@ -127,6 +127,7 @@ main section {
 main .promoSlider ul {
     overflow: scroll;
     display: flex;
+    scroll-snap-type: x mandatory;
 }
 main .promoSlider ul li {
     position: relative;
@@ -135,6 +136,7 @@ main .promoSlider ul li {
     margin-right: 1em;
     background-color: #D7EEFC;
     overflow: hidden;
+    scroll-snap-align: center;
 }
 main .promoSlider ul li h3 {
     font-size: 1.3em;
@@ -182,12 +184,14 @@ main .catSlider {
 main .catSlider ul {
     display: flex;
     overflow: scroll;
+    scroll-snap-type: x mandatory;
 }
 main .catSlider ul li {
     margin-right: 1em;
     display: flex;
     flex-flow: column;
     align-items: center;
+    scroll-snap-align: center;
 }
 main .catSlider ul li img {
     width: 10em;
