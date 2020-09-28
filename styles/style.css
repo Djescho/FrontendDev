@@ -15,7 +15,43 @@ ul {
     list-style: none;
     padding-left: 0;
 }
-
+li {
+    
+}
+h1 {
+    color: #000000;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    font-size: 1.25em; 
+}
+h2 {
+    
+}
+h3 {
+    font-family: 'lora', serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 1.3em;
+    margin: 0;
+    
+    
+    
+}
+h4 {
+    color: #FFFFFF;
+    margin: 0;
+    font-weight: 200;
+}
+h5 {
+    
+}
+h6 {
+    
+}
+.prijs {
+    font-size: .8em;
+    color: red;
+}
 /*SLIDERBUTTONS*/
 
 section button {
@@ -70,7 +106,7 @@ header nav div button {
     background-color: transparent;
 }
 header nav div button img {
-    height: 1.5em;
+    height: 1.9em;
     width: auto;
 }
 
@@ -79,16 +115,17 @@ header nav div a img {
     width: auto;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+
+header ul {
     display: flex;
     align-items: center;
-    
 }
-
+header ul li a{
+    display: flex;
+    align-items: center;
+}
 .icon {
-    height: 1.2em;
+    height: 1.3em;
     width: auto;
     margin-left: 1.5em;
 }
@@ -129,39 +166,59 @@ main .promoSlider ul {
     display: flex;
     scroll-snap-type: x mandatory;
 }
+main .promoSlider ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
 main .promoSlider ul li {
     position: relative;
-    min-width: 16em;
-    min-height: 14em;
+    min-width: 14em;
+    height: 14em;
     margin-right: 1em;
-    background-color: #D7EEFC;
+    background-color: #0100A4;
     overflow: hidden;
     scroll-snap-align: center;
-}
-main .promoSlider ul li h3 {
-    font-size: 1.3em;
-    width: 80%;
-    line-height: 1.2em;
-    position: absolute;
-    top: .1em;
-    left: 1em;
-}
-main .promoSlider ul li span{
-    font-weight: 200;
-    font-size: .9em;
-    
-}
-main .promoSlider ul li img {
-    width: 100%;
-}
-/*    ik krijg het niet voor elkaar om de afbeelding ingezoomd te krijgen en vind fotoshop een beetje goedkoop*/
-main .promoSlider ul li a img {
-    margin-top: 0;
-    width: 100%;
-    height: auto;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 25em auto
 }
 
+main .promoSlider ul li:nth-of-type(1) {
+    background-image: url("../images/themes/bol10daagse/promosliderA.jpg");
+    
+}
+main .promoSlider ul li:nth-of-type(2) {
+    background-image: url("../images/themes/bol10daagse/promosliderB.jpg");
+}
+main .promoSlider ul li:nth-of-type(3) {
+    background-image: url("../images/themes/bol10daagse/promosliderC.jpg");
+}
+main .promoSlider ul li:nth-of-type(4) {
+    background-image: url("../images/themes/bol10daagse/promosliderD.jpg");
+}
+main .promoSlider ul li a:first-of-type {
+    display: block;
+    padding: 1em;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+    
+main .promoSlider ul li a h3 {
+/*
+    position: absolute;
+    left: 1em;
+    top: .1em;
+*/
+    
+}
+main .promoSlider ul li a h4 {
+    
+}
 .productButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: .3em .5em;
     border-radius: 2px;
     position: absolute;
@@ -169,12 +226,15 @@ main .promoSlider ul li a img {
     bottom: 1em;
     left: 1em;
     width: 1.7em;
-    height: 1.7em;
-    
+    height: 1.7em;  
+}
+.productButton img {
+    height: 100%;
 }
 
 
 /*SECTIE2*/
+
 
 main .catSlider {
     color: black;
@@ -199,6 +259,32 @@ main .catSlider ul li img {
     background-color: aqua;
 }
 
+/*SECTIE3*/
+
+main .populair {
+    
+}
+main .populair ul{
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+main .populair ul li {
+    margin-right: 1em;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    scroll-snap-align: center;
+}
+main .populair ul li img {
+    width: 10em;
+    height: 10em;
+    background-color: aqua;
+}
+main .populair ul li h5 {
+    color: #000000;
+    margin: 0;
+}
 /*Service*/
 
 /*MENU*/
@@ -254,7 +340,17 @@ main .catSlider ul li img {
     background-color: #CEE9FC;
     padding: 1em;
 }
+
+/*BANNER*/
+
+.promoBanner {
+    width: 100%;
+    height: auto;
+    margin: 1em 0;
+}
 /*FOOTER*/
+
+
 
 /*SERVICE*/
 .service {
@@ -276,6 +372,9 @@ main .catSlider ul li img {
     justify-content: flex-start;
     margin-bottom: 1.5em;
     
+}
+.service ul li h1 {
+    color: #FFFFFF;
 }
 .service ul li img {
     height: 2.9em;
@@ -303,10 +402,17 @@ main .catSlider ul li img {
 .service ul li div p a {
     color: white;
 }
+
+
+
 footer {
     display: flex;
     align-items: center;
     flex-flow: column;
+}
+footer ul {
+    width: 100%;
+    margin-top: 0;
 }
 footer ul li {
     display: flex;
@@ -314,12 +420,16 @@ footer ul li {
     align-items: center;
     height: 2em;
     max-width: 100%;
+    padding: 0 1em;
     border-bottom-style: solid;
     border-color: #333333;
-    border-width: 1px;
-    
-    
+    border-width: 1px;  
 }
+
+footer .footersitemap {
+    visibility: hidden;
+}
+
 .social {
     display: flex;
     flex-flow: column;
@@ -328,6 +438,7 @@ footer ul li {
 .social ul {
     display: flex;
     flex-flow: row;
+    flex-wrap: wrap;
     align-items: center;
     list-style: none;
 }
@@ -339,12 +450,13 @@ footer ul li {
 }
 .social ul li a img {
     width: auto;
-    height: 1.6em;
+    height: 1.4em;
     margin: 0 .4em;
 }
 
+
 footer .footerlogo {
-    width: 20em;
+    width: 18em;
 }
 
 .winkelwaarborg {
@@ -362,6 +474,7 @@ footer .footerlogo {
     display: flex;
     align-items: center;
     margin: 1 1em;
+    padding: 0;
     
     border-bottom-style: none;
     
@@ -384,10 +497,10 @@ footer .footerlogo {
 }
 /*tip: punten aanpassen per site sectie*/
 
-/*
+
 @media (min-width: 600px) {
     header img:last-of-type {
-        margin: 2em;
+        padding: 0 2em 2em 2em;
     }
     main {
         padding: 0 1em;
@@ -396,7 +509,23 @@ footer .footerlogo {
     width: 6em;
     height: 6em;
     }
+    .service ul {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1em;
+    }
+    .service ul li {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        margin-bottom: 0;
+    }
+    .service ul li:first-of-type {
+       
+    }
 }
 @media (min-width: 900px) {
     
-}*/
+}

@@ -9,6 +9,7 @@
     <title>Bol.com | de winkel van ons allemaal</title>
 
     <link href="./styles/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:700">
 </head>
 
 <body>
@@ -31,36 +32,61 @@
         <form action="get">
             <input type="search" placeholder="Waar bent u naar op zoek?">
         </form>
-        <img src="./images/mobileHero.JPG" alt="">
+        <img src="./images/themes/bol10daagse/mobileheader.jpg" alt="">
     </header>
 
     <main>
         <section class="promoSlider">
+            <h1 hidden>Voordeel &#38; Inspiratie</h1>
             <ul>
                 <li>
-                    <h3>De nieuwste mode <span>voor dames</span></h3>
-                    <a href="#"><img src="./images/WinterCoat.jpg" alt="Dame met lange stoffe winterjas aan."></a>
-                    <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt=""></a>
+                    <a href="#">
+                        <h3>2 + 1 gratis</h3>
+                        <h4>op selectie phipips hue</h4>
+                        <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt="">
+                        </a>
+                    </a>
                 </li>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li>
+                    <a href="#">
+                        <h3>Tot 50% korting</h3>
+                        <h4>op luiers en billendoeken</h4>
+                        <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt="">
+                        </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Tot 50% kortin</h3>
+                        <h4>op huishoudmiddelen</h4>
+                        <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt="">
+                        </a>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Tot 40% kortin</h3>
+                        <h4>op Philips</h4>
+                        <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt="">
+                        </a>
+                    </a>
+                </li>
             </ul>
 
-            <button>
+            <button data-direction="prev" aria-label="previous">
                 <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
             </button>
-            <button>
+            <button data-direction="next" aria-label="next">
                 <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
             </button>
 
         </section>
 
         <section class="catSlider">
-            <h2>Kies een categorie</h2>
+            <h1>Kies een categorie</h1>
             <ul>
-                <li id="catBlok1"><img src="./images/test.jpg" alt="">
-                    <h4>Categrorie A</h4>
+                <li><img src="./images/test.jpg" alt="">
+                    <h5>Categrorie A</h5>
                 </li>
                 <li><img src="" alt="">
                     <h4>Categorie B</h4>
@@ -154,8 +180,46 @@
 
         </section>
 
+        <section class="populair">
+            <h1>Populair bij Bol.com</h1>
+            <ul>
+                <li><img src="./images/producten/chromecast.jpg" alt="">
+                    <h6>Google Chromecast</h6>
+                    <p class="prijs">&#8364;23,99</p>
+                </li>
+                <li><img src="" alt="">
+                    <h4>Categorie B</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>Categorie B</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>Categorie B</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>Categorie B</h4>
+                </li>
+                <li><img src="" alt="">
+                    <h4>Categorie B</h4>
+                </li>
+            </ul>
 
+            <button>
+                <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
+            </button>
+            <button>
+                <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
+            </button>
 
+        </section>
+
+        <!--
+        <section class="promoBanner">
+            <h3></h3>
+            <a href="#"><img src="./images/themes/bol10daagse/promosliderA.jpg" alt="Dame met lange stoffe winterjas aan."></a>
+            <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt=""></a>
+        </section>
+-->
 
         <section class="sideMenu">
             <div>
@@ -164,6 +228,7 @@
             <ul>
                 <li><img src="" alt="">
                     <h4>CatA</h4>
+
                 </li>
                 <li><img src="" alt="">
                     <h4>CatA</h4>
@@ -209,7 +274,7 @@
         <section class="service">
             <ul>
                 <li>
-                    <h2>Service &#38; contact</h2>
+                    <h1>Service &#38; contact</h1>
                 </li>
 
                 <li>
@@ -232,9 +297,21 @@
     </main>
 
     <footer>
-       
+
         <ul>
-            <li><a href="">Klantenservice</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
+            <li>
+                <a href="">Klantenservice</a>
+                <ul class="footersitemap">
+                    <li><a href="">Contanct opnemen</a></li>
+                    <li><a href="">Bestellen &#38; Leveren</a></li>
+                    <li>Betalen</li>
+                    <li>Retourneren</li>
+                    <li>Garantie &#38; Reparatie</li>
+                </ul>
+                <img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon">
+
+            </li>
+
             <li><a href="">Over bol.com</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
             <li><a href="">Zakendoen met bol.com</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
         </ul>
@@ -246,24 +323,24 @@
                 <li><a href="#"><img src="./images/icons/social/instagram.svg" alt=""></a></li>
                 <li><a href="#"><img src="./images/icons/social/pinterest.svg" alt=""></a></li>
                 <li><a href="#"><img src="./images/icons/social/linkedin.svg" alt=""></a></li>
-                <li><a href="#"><img src="./images/icons/social/twitter-1.svg" alt=""></a></li>
-<!--                Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
+                <li><a href="#"><img src="./images/icons/social/twitter.svg" alt=""></a></li>
+                <!--                Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
             </ul>
             <p><a href="">Meld je aan</a> voor onze nieuwsbrief</p>
         </section>
-        
+
         <img class="footerlogo" src="./images/icons/LogoBlauwTekst.jpg" alt="">
-<!--        bron afbeelding: https://pers.bol.com/beeld-archief-item/logo-bol-com-pay-off-rgb/-->
-        
+        <!--        bron afbeelding: https://pers.bol.com/beeld-archief-item/logo-bol-com-pay-off-rgb/-->
+
         <section class="winkelwaarborg">
-           <ul>
-               <li><img src="./images/icons/thuiswinkelLogo.png" alt=""> Geldt voor aankopen bij <a href=""> Thuiswinkel-leden</a></li>
-               <li>| <a href=""> Algemene Voorwaarden </a></li>
-               <li>| <a href=""> Privacy </a></li>
-               <li>| <a href=""> cookies </a></li>
-               <li>| <a href=""> Trademark</a></li>
-           </ul>
-            
+            <ul>
+                <li><img src="./images/icons/thuiswinkelLogo.png" alt=""> Geldt voor aankopen bij <a href=""> Thuiswinkel-leden</a></li>
+                <li>| <a href=""> Algemene Voorwaarden </a></li>
+                <li>| <a href=""> Privacy </a></li>
+                <li>| <a href=""> cookies </a></li>
+                <li>| <a href=""> Trademark</a></li>
+            </ul>
+
         </section>
     </footer>
     <script src="scripts/script.js"></script>
