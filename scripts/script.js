@@ -3,7 +3,7 @@ var menuOpen = document.querySelector("#menuButton");
 var closeMenu = document.querySelector(".closeButton")
 var sideMenu = document.querySelector(".sideMenu");
 
-var deButtons = document.querySelectorAll("button");
+var deButtons = document.querySelectorAll("section button");
 
 for(i=0; i<deButtons.length; i++) {
   deButtons[i].addEventListener("click", scrollenMaar);

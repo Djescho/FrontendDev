@@ -28,7 +28,7 @@ h2 {
     
 }
 h3 {
-    font-family: 'lora', serif;
+    font-family: 'Lora', serif;
     font-weight: 700;
     color: #FFFFFF;
     font-size: 1.3em;
@@ -43,10 +43,22 @@ h4 {
     font-weight: 200;
 }
 h5 {
-    
+    font-size: 1.2em;
+    font-weight: 400;
 }
 h6 {
-    
+    color: #000000;
+    margin: 0;
+    font-size: 1em;
+    padding-top: .5em;
+}
+p {
+    color: #000000;
+    margin: 0;
+}
+p a {
+    text-decoration: none;
+    color: #00f;
 }
 .prijs {
     font-size: .8em;
@@ -176,7 +188,7 @@ main .promoSlider ul li {
     height: 14em;
     margin-right: 1em;
     background-color: #0100A4;
-    overflow: hidden;
+    overflow: auto;
     scroll-snap-align: center;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -229,7 +241,7 @@ main .promoSlider ul li a h4 {
     height: 1.7em;  
 }
 .productButton img {
-    height: 100%;
+    height: 45%;
 }
 
 
@@ -282,6 +294,77 @@ main .populair ul li img {
     background-color: aqua;
 }
 main .populair ul li h5 {
+    color: #000000;
+    margin: 0;
+}
+/*SECTIE5*/
+
+main .cadeauSlider {
+    color: black;
+/*    scrollsnap*/
+}
+
+main .cadeauSlider ul {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+main .cadeauSlider ul li {
+    position: relative;
+    background-image: url("../images/presentA.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-right: 1em;
+    min-width: 65%;
+    height: 14em;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    scroll-snap-align: center;
+    margin-bottom: 2em;
+}
+main .cadeauSlider ul li:nth-of-type(2){
+    background-image: url("../images/presentB.jpg")
+}
+main .cadeauSlider ul li:nth-of-type(3){
+    background-image: url("../images/presentC.jpg")
+}
+main .cadeauSlider ul li:nth-of-type(4){
+    background-image: url("../images/presentD.jpg")
+}
+main .cadeauSlider ul li h5 {
+    overflow: visible;
+    position: absolute;
+    bottom: -3.3em;;
+    
+}
+
+/*LAATSTE SECTIE*/
+main .ookInteressant {
+    
+}
+main .ookInteressant ul{
+    display: flex;
+    overflow: scroll;
+    scroll-snap-type: x mandatory;
+}
+main .ookInteressant li {
+    margin-right: 1em;
+    min-width: 75%;
+    height: auto;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    scroll-snap-align: center;
+}
+main .ookInteressant ul li img {
+    width: 100%;
+    height: auto;
+    background-color: aqua;
+}
+main .ookInteressant ul li h5 {
     color: #000000;
     margin: 0;
 }
@@ -343,10 +426,23 @@ main .populair ul li h5 {
 
 /*BANNER*/
 
-.promoBanner {
+main .promoBanner {
+    padding: 1em;
+    background-color: #0100A4;
+    background-image: url("../images/promoBanner.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
     width: 100%;
-    height: auto;
-    margin: 1em 0;
+    height: 14em;;
+    
+}
+main .promobanner a {
+    display: block;
+    padding: 1em;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 /*FOOTER*/
 
@@ -358,7 +454,7 @@ main .populair ul li h5 {
     color: white;
     background-color: #0000A4;
     padding: 1em 1em;
-    margin: 0 -1em;
+    margin: 1em -1em 0em -1em;
 }
 .service ul {
     display: flex;
@@ -391,6 +487,7 @@ main .populair ul li h5 {
     font-weight: 600;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
     
 }
 .service ul li div p {
@@ -398,9 +495,11 @@ main .populair ul li h5 {
     font-weight: 100;
     margin: 0;
     padding: 0;
+    color: #FFFFFF;
 }
 .service ul li div p a {
     color: white;
+    text-decoration: underline;
 }
 
 
@@ -441,6 +540,7 @@ footer .footersitemap {
     flex-wrap: wrap;
     align-items: center;
     list-style: none;
+    justify-content: center;
 }
 .social ul li {
     border-bottom-style: none;
@@ -451,7 +551,7 @@ footer .footersitemap {
 .social ul li a img {
     width: auto;
     height: 1.4em;
-    margin: 0 .4em;
+    
 }
 
 
