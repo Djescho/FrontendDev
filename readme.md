@@ -1,5 +1,5 @@
 # Procesverslag
-**Auteur:** Djescho
+**Auteur: Djescho**
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
@@ -43,7 +43,7 @@ Het leukste vind ik het netjes maken van mijn HTML/CSS. Ik vind het een hele leu
 
 **Screenshot(s):**
 
-(./images/proces/voortgangWeek3.png)
+!(./images/proces/voortgangWeek3.png)
 
 ### Agenda voor meeting
 
