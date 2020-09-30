@@ -64,21 +64,32 @@ p a {
     font-size: .8em;
     color: red;
 }
-/*SLIDERBUTTONS*/
+
+.icon {
+    height: 1em;
+    width: auto;
+    margin-left: 1.5em;
+}
+button {
+    height: 1.9em;
+    border-style: none;
+    background-color: transparent;
+}
 
 section button {
+    height: auto;
     top: 50%;
     position: absolute;
-    padding: .65em;
+    padding: .8em;
     background-color: #FFFFFF;
     box-shadow: 7px 7px 15px -5px rgba(0,0,0,0.64);
     border: none;
-    border-radius: 2px;
+    border-radius: 5px;
     z-index: 100;
     left: -1em;
 }
 section button img {
-    width: 1em;
+    width: 1.1em;
     height: auto;
     z-index: 150;
     transform: rotate(180deg);
@@ -101,62 +112,77 @@ body {
 }
 
 /*HEADER*/
-header nav {
+nav {
+
+    /* width: 100%; */
+}
+#navContainer {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    padding: 0 1em;
+    /* padding: 0 1em; */
 }
-header nav div {
+#navContainer li:first-of-type {
     display: flex;
     align-items: center;
+    flex-basis: 0;
+    margin: .3em 0 .3em 1em;
 }
-header nav div button {
-    height: 1.9em;
-    border-style: none;
-    background-color: transparent;
-}
-header nav div button img {
+#navContainer li:first-of-type img, button {
     height: 1.9em;
     width: auto;
 }
-
-header nav div a img {
-    height: 1.9em;
-    width: auto;
-}
-
-
-header ul {
-    display: flex;
-    align-items: center;
-}
-header ul li a{
-    display: flex;
-    align-items: center;
-}
-.icon {
-    height: 1.3em;
-    width: auto;
-    margin-left: 1.5em;
-}
-header form {
+#navContainer li:nth-of-type(2) {
     background-color: #0000A4;
     padding: 1em;
-}
-header form input {
     width: 100%;
+    order: 1;
+    
+}
+#navContainer li:nth-of-type(2) form {
+    width: 100%;
+}
+#navContainer li:nth-of-type(2) form input {
     height: 3em;
+    width: 100%;
     padding-left: 1.1em;
     border-radius: 1.5em;
     border-style: none;
     font-size: .9em;
 }
-header img {
+#navContainer li:last-child {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
+    margin-left: auto;
+}
+#navContainer li:last-child ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navContainer li:last-child ul li {
+    background-color: transparent;
+    padding: 0;
+    order: unset;
+    margin-left: 1em;
+}
+#navContainer li:last-child ul li a{
+    display: flex;
+    align-items: center;
+    height: 100%;
     width: 100%;
 }
-
+#navContainer li:last-child ul li img{
+    height: 1.6em;
+}
+#hero {
+    width: 100%;
+}
+#hero img {
+    width: 100%;
+}
 
 /*MAIN*/
 
@@ -434,7 +460,7 @@ main .promoBanner {
     background-position: bottom;
     background-size: contain;
     width: 100%;
-    height: 14em;;
+    height: 14em;
     
 }
 main .promobanner a {
@@ -517,12 +543,21 @@ footer ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 2em;
-    max-width: 100%;
+    height: 2.2em;
+   
     padding: 0 1em;
     border-bottom-style: solid;
-    border-color: #333333;
-    border-width: 1px;  
+    border-color: rgba(0,0,0, .1);
+    border-width: .0001px;  
+}
+footer ul li ul {
+    width: 0px;
+}
+footer ul li a:first-of-type {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    
 }
 
 footer .footersitemap {
@@ -599,8 +634,11 @@ footer .footerlogo {
 
 
 @media (min-width: 600px) {
-    header img:last-of-type {
-        padding: 0 2em 2em 2em;
+    button {
+        visibility: hidden;
+    }
+    #hero {
+        padding: 1em;
     }
     main {
         padding: 0 1em;
@@ -611,9 +649,10 @@ footer .footerlogo {
     }
     .service ul {
     display: flex;
-    flex-flow: column;
+    flex-wrap: wrap;
+    flex-flow: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0 1em;
     }
     .service ul li {
@@ -624,6 +663,75 @@ footer .footerlogo {
     }
     .service ul li:first-of-type {
        
+    }
+    footer .footersitemap {
+        visibility: visible;
+    }
+    footer ul:first-child {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 1em;
+        max-width: 120%;
+    }
+    footer ul li {
+        align-items: flex-start;
+        justify-content: flex-start;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 30%;
+        padding: 0;
+        margin: 0;
+        border-bottom-style: none;
+        /* display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 2em;
+        width: 100%;
+        padding: 0 1em;
+        border-bottom-style: solid;
+        border-color: #333333;
+        border-width: 1px;   */
+    }
+    footer ul li ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    footer ul li ul li {
+        width: 100%;;
+    }
+    footer ul li ul li a {
+        width: 100%;;
+        text-decoration: none;
+        color: #000000;
+    }
+    footer ul li a:first-of-type {
+        text-decoration: none;
+        display: block;
+        color: #000000;
+        width: 100%;
+    }
+    .icon {
+        visibility: hidden;
+    }
+    main .promoSlider ul {
+        overflow: scroll;
+    }
+    main .promoSlider ul li {
+        position: relative;
+        min-width: 16em;
+        min-height: 16em;
+        margin-right: 1em;
+        background-color: #0100A4;
+        overflow: auto;
+        scroll-snap-align: center;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: 28em auto
+    }
+    main .promoSlider ul li:last-of-type{
+        margin-right: 0;
     }
 }
 @media (min-width: 900px) {

@@ -14,25 +14,38 @@
 
 <body>
     <header>
+        <section class="topBar">
+
+        </section>
         <nav>
-            <div>
-                <button class="menuOpenButton">
-                    <img src="./images/icons/MenuIcoon.svg" alt="menu knop" id="menuButton">
-                </button>
-                <a href="#"><img src="./images/icons/LogoBlauw-01.png" alt="bol.com logo"></a>
-            </div>
-
-
-            <ul>
-                <li><a href="#"><img src="./images/icons/MijnAccountBlauw.svg" alt="mijn account icoon" class="icon"></a></li>
-                <li><a href="#"><img src="./images/icons/HartBlauw.svg" alt="mijn favoriten icoon" class="icon"></a></li>
-                <li><a href="#"><img src="./images/icons/WinkelwagenBlauw.svg" alt="mijn winkelwagen icoon" class="icon"></a></li>
-            </ul>
+            <ul id="navContainer">
+                <li>
+                    <button class="menuOpenButton">
+                        <img src="./images/icons/MenuIcoon.svg" alt="menu knop" id="menuButton">
+                    </button>
+                    <a href="#"><img src="./images/icons/LogoBlauw-01.png" alt="bol.com logo"></a>
+                </li>
+                <li>
+                    <form action="get">
+                        <input type="search" placeholder="Waar bent u naar op zoek?">
+                    </form>
+                </li>
+                <li>
+                    <ul>
+                        <li><a href="#"><img src="./images/icons/MijnAccountBlauw.svg" alt="mijn account icoon" ></a>
+                        </li>
+                        <li><a href="#"><img src="./images/icons/HartBlauw.svg" alt="mijn favoriten icoon"> </a>
+                        </li>
+                        <li><a href="#"><img src="./images/icons/WinkelwagenBlauw.svg" alt="mijn winkelwagen icoon" ></a>
+                        </li>
+                    </ul>
+                </li>
+             </ul>
         </nav>
-        <form action="get">
-            <input type="search" placeholder="Waar bent u naar op zoek?">
-        </form>
-        <img src="./images/themes/bol10daagse/mobileheader.jpg" alt="">
+
+        <div id="hero">
+            <img src="./images/themes/bol10daagse/mobileheader.jpg" alt="">
+        </div>
     </header>
 
     <main>
@@ -74,10 +87,10 @@
             </ul>
 
             <button data-direction="prev" aria-label="previous">
-                <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
+                <img src="./images/icons/Arrows/arrowBlue.svg" alt="">
             </button>
             <button data-direction="next" aria-label="next">
-                <img src="./images/icons/Arrows/arrowGrey.svg" alt="">
+                <img src="./images/icons/Arrows/arrowBlue.svg" alt="">
             </button>
 
         </section>
@@ -212,8 +225,8 @@
             </button>
 
         </section>
-        
-         <section class="populair">
+
+        <section class="populair">
             <h1>Deals voor Select-leden</h1>
             <ul>
                 <li><img src="./images/producten/chromecast.jpg" alt="">
@@ -245,29 +258,29 @@
             </button>
 
         </section>
-        
-        
+
+
         <section class="promoBanner">
             <a href="#">
-                        <h3>20% korting</h3>
-                        <h4>op laptops</h4>
-                        <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt="">
-                        </a>
-                    </a>
+                <h3>20% korting</h3>
+                <h4>op laptops</h4>
+                <a href="#" class="productButton"><img src="./images/icons/Arrows/arrowWhite.svg" alt="">
+                </a>
+            </a>
         </section>
 
-        
-         <section class="cadeauSlider">
+
+        <section class="cadeauSlider">
             <h1>Cadeaus voor iedereen</h1>
             <ul>
                 <li>
                     <h5>Cadeaus voor haar</h5>
                 </li>
                 <li>
-                <h5>Cadeaus voor hem</h5>
+                    <h5>Cadeaus voor hem</h5>
                 </li>
                 <li>
-                <h5>Altijd goed Cadeaus</h5>
+                    <h5>Altijd goed Cadeaus</h5>
                 </li>
                 <li>
                     <h5>Verrassende cadeaus</h5>
@@ -282,8 +295,8 @@
             </button>
 
         </section>
-        
-       
+
+
         <section class="ookInteressant">
             <h1>Ook Interessant</h1>
             <ul>
@@ -308,8 +321,8 @@
 
         </section>
 
-        
-        
+
+
 
         <section class="sideMenu">
             <div>
@@ -371,7 +384,8 @@
                     <img src="./images/icons/MijnAccountWit.svg" alt="">
                     <div>
                         <h5>Snel regelen in je account</h5>
-                        <p><a href="#">volg je bestelling</a>, <a href="#">betaal facturen</a> of <a href="#">retourneer een artikel</a>.</p>
+                        <p><a href="#">volg je bestelling</a>, <a href="#">betaal facturen</a> of <a href="#">retourneer
+                                een artikel</a>.</p>
                     </div>
                 </li>
                 <li>
@@ -387,24 +401,50 @@
     </main>
 
     <footer>
+        <section class="footerContent">
+            <ul>
+                <li>
+                    <h6><a href="">Klantenservice</a></h6>
+                    <ul class="footersitemap">
+                        <li><a href="">Contanct opnemen</a></li>
+                        <li><a href="">Bestellen &#38; Leveren</a></li>
+                        <li>Betalen</li>
+                        <li>Retourneren</li>
+                        <li>Garantie &#38; Reparatie</li>
+                    </ul>
+                    <img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon">
 
-        <ul>
-            <li>
-                <a href="">Klantenservice</a>
-                <ul class="footersitemap">
-                    <li><a href="">Contanct opnemen</a></li>
-                    <li><a href="">Bestellen &#38; Leveren</a></li>
-                    <li>Betalen</li>
-                    <li>Retourneren</li>
-                    <li>Garantie &#38; Reparatie</li>
-                </ul>
-                <img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon">
+                </li>
 
-            </li>
+                <li>
+                    <h6><a href="">Over bol.com</a></h6>
+                    <ul class="footersitemap">
+                        <li><a href="">De voordelen van bol.com</a></li>
+                        <li><a href="">Nieuws</a>/li>
+                        <li><a href="">Werken bij bol.com</a></li>
+                        <li><a href="">Bol.com & duurzaamheid</a></li>
+                        <li><a href="">De bol.com app</a></li>
+                        <li><a href="">Bedrijfsgegevens</a></li>
+                    </ul>
+                    <img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon">
+                </li>
+                <li>
+                    <h6><a href="">Zakendoen met bol.com</a></h6>
+                    <ul class="footersitemap">
+                        <li><a href="">Zakerlijk verkopen</a></li>
+                        <li><a href="">Zakelijk bestellen</a></li>
+                        <li><a href="">Zakelijke cadeaukaarten</a></li>
+                        <li><a href="">Adverteren</a></li>
+                        <li><a href="">Affiliate Marketing</a></li>
+                        <li><a href="">Leveranciers</a></li>
+                        <li><a href="">Tweedehands verkopen</a></li>
+                    </ul>
+                    <img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon">
+                </li>
+            </ul>
 
-            <li><a href="">Over bol.com</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
-            <li><a href="">Zakendoen met bol.com</a><img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon"></li>
-        </ul>
+        </section>
+
         <section class="social">
             <h5>Wil je ons volgen?</h5>
             <ul>
@@ -424,7 +464,8 @@
 
         <section class="winkelwaarborg">
             <ul>
-                <li><img src="./images/icons/thuiswinkelLogo.png" alt=""> Geldt voor aankopen bij <a href=""> Thuiswinkel-leden</a></li>
+                <li><img src="./images/icons/thuiswinkelLogo.png" alt=""> Geldt voor aankopen bij <a href="">
+                        Thuiswinkel-leden</a></li>
                 <li>| <a href=""> Algemene Voorwaarden </a></li>
                 <li>| <a href=""> Privacy </a></li>
                 <li>| <a href=""> cookies </a></li>
