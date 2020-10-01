@@ -45,7 +45,7 @@ Het leukste vind ik het netjes maken van mijn HTML/CSS. Ik vind het een hele leu
 
 !(./images/proces/voortgangWeek3.png)
 
-### Agenda voor meeting
+#### Agenda voor meeting
 
 Agenda 17/8
 Celine, Floris en Djescho
@@ -59,7 +59,7 @@ Dingen die we behandeld willen hebben:
 - wel goed doen [Djescho]
 - Lege plek [Floris]
 
-### Verslag van meeting
+#### Verslag van meeting
 
 na afloop snel uitkomsten vastleggen
 
@@ -79,4 +79,6 @@ na afloop snel uitkomsten vastleggen
 
 **Breakdown-schets(en):**
 
-![-voorlopige breakdownschets(en) van een of beide pagina's van de site die je gaat maken-](images/LandingPaginaOpgedeeld.png)
+!(./docs/siteAnalyse/png/siteAnalyse.png)
+!(./docs/siteAnalyse/png/siteAnalyse1.png)
+De pdf versies van deze foto's zijn [Hier](./docs/siteAnalyse/pdf/siteAnalyse.pdf) te zien.
