@@ -36,7 +36,7 @@ De site staat er inmiddels. Op hemt moment ben ik bezig met het verbeteren van s
 
 **screenshots(s)**
 
-!(docs/screenshots/progressV3.png)
+![](docs/screenshots/progressV3.png)
 
 ### Agenda voor meeting
 
@@ -59,7 +59,7 @@ Het leukste vind ik het netjes maken van mijn HTML/CSS. Ik vind het een hele leu
 
 **Screenshot(s):**
 
-!(./images/proces/voortgangWeek3.png)
+![](docs/screenshots/progressV1.png)
 
 #### Agenda voor meeting
 
@@ -91,10 +91,10 @@ Na de hulp van sanne kon iedereen weer verder.
 
 **Screenshot(s):**
 
-![screenshot(s) die een goed beeld geven van de website die je gaat maken](images/bolLanding.png)(images/bolFooter.png)
+![](docs/screenshots/bolWebsite.png)
 
 **Breakdown-schets(en):**
 
 ![](docs/siteAnalyse/png/siteAnalyse.png)
-!(docs/siteAnalyse/png/siteAnalyse1.png)
+![](docs/siteAnalyse/png/siteAnalyse1.png)
 De pdf versies van deze foto's zijn [Hier](./docs/siteAnalyse/pdf/siteAnalyse.pdf) te zien.
