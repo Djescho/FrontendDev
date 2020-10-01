@@ -30,7 +30,23 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+De site staat er inmiddels. Op hemt moment ben ik bezig met het verbeteren van stukken html/css en het responsive maken van de website. Vaak zie ik achteraf dat het veel beter en netter kan en dan moet ik vaak een heel blok opnieuw uitwerken. Dit is altijd een uitdaging. Ik merk dat ik CSS grid steeds stapje bij stapje beter begin te begrijpen. Door zelf wat test bestandjes te maken ben ik al een stuk verder gekomen in mijn kennis. 
+
+**screenshots(s)**
+
+!(docs/screenshots/progressV3.png)
+
+### Agenda voor meeting
+
+| Celine | Djescho | Floris |
+|--------|:-------:|-------:|
+| Transitie in elkaar vouwen van header en main over de hero (header begint transparant en verkleurd bij het "vouwen") | Ik krijg de scroll knoppen maar niet werkende :) | Wat kan ik toevoegen om aan de surface plane te voldoen, want overal animaties bij maakt het niet beter |
+| Timing tekst animaties (inschuiven vanaf de zijkant tijdens het scrollen) |  |  |
+| Tekst op een makkelijke manier responsive uitlijnen |  |  |
+| First class is free section met meebewegende (achtergrond?) afbeelding |  |  |
+| Afbeelding correct uitknippen / plaatsen op basis van schermgrootte |  |  |
 
 
 
@@ -61,7 +77,7 @@ Dingen die we behandeld willen hebben:
 
 #### Verslag van meeting
 
-na afloop snel uitkomsten vastleggen
+Na de hulp van sanne kon iedereen weer verder.
 
 
 
@@ -79,6 +95,6 @@ na afloop snel uitkomsten vastleggen
 
 **Breakdown-schets(en):**
 
-!(./docs/siteAnalyse/png/siteAnalyse.png)
-!(./docs/siteAnalyse/png/siteAnalyse1.png)
+!(docs/siteAnalyse/png/siteAnalyse.png)
+!(docs/siteAnalyse/png/siteAnalyse1.png)
 De pdf versies van deze foto's zijn [Hier](./docs/siteAnalyse/pdf/siteAnalyse.pdf) te zien.
