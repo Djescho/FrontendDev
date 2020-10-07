@@ -38,7 +38,7 @@ De site staat er inmiddels. Op hemt moment ben ik bezig met het verbeteren van s
 
 ![](docs/screenshots/progressV3.png)
 
-### Agenda voor meeting 1/10/20
+### Agenda voor meeting
 
 | Celine | Djescho | Floris |
 |--------|:-------:|-------:|
