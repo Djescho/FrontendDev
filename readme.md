@@ -24,7 +24,15 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Wat ik zo leuk vind is dat ik in dit project steeds vaker mijn eigen probelemen kan localiseren en oplossen. Inmiddels heb ik de header volledig responsive gekregen en stopt de pagina met groeien na width: 77em. Nu moet ik alleen het blauw van de service sectie nog de volledige breedte van het scherm laten aannemen. Deze week wil ik deze pagina helemaal af hebben, de html en css herzien en aan de product pagina starten.
+
+![](docs/screenshots/progressV5-1.png)
+![](docs/screenshots/progressV5-2.png)
+
+### Agenda voor meeting
+
 
 
 
