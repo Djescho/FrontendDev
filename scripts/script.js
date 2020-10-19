@@ -1,7 +1,8 @@
 // JavaScript Document
 var menuOpen = document.querySelector("#menuButton");
-var closeMenu = document.querySelector(".closeButton")
+var closeMenu = document.querySelector("#closeButton")
 var sideMenu = document.querySelector(".sideMenu");
+var mainElement = document.querySelector("main");
 
 var deButtons = document.querySelectorAll("section button");
 
@@ -40,7 +41,8 @@ function scrollenMaar(event) {
 
 function toggleMenu() {
     console.log("Menu toggle");
-    sideMenu.classList.toggle("sideMenuOpen");
+    sideMenu.classList.toggle("sideMenuActive");
+    mainElement.classList.toggle("noscroll");
 }
 
 menuOpen.addEventListener('click', toggleMenu);

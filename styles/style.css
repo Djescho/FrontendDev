@@ -126,7 +126,7 @@ body {
 
 /*HEADER*/
 
-#topbar {
+.topbar {
     
     height: 3em;
     display: none;
@@ -137,22 +137,22 @@ body {
     color: #0000A4;
     padding: 1em;
 }
-#topbar span {
+.topbar span {
     font-weight: 700;
     font-size: 1.1em;
 }
-#topbar ul li{
+.topbar ul li{
     display: inline;
 }
-#topbar ul:first-of-type li{
+.topbar ul:first-of-type li{
     padding-right: 20px;
 }
-#topbar ul:last-of-type li{
+.topbar ul:last-of-type li{
     color: rgb(5, 172, 58);
     
 }
 
-#navContainer {
+.navContainer {
     flex-grow: 1;
     display: flex;
     justify-content: flex-start;
@@ -161,43 +161,43 @@ body {
     max-width: 77em;
     margin: 0;
 }
-#navContainer li:first-of-type {
+.navContainer li:first-of-type {
     display: flex;
     align-items: baseline;
     flex-basis: 0;
     margin: .5em 0 1em 0;
 }
-#navContainer li:first-of-type button {
+.navContainer li:first-of-type button {
     outline: none;
     border-style: none;
     background-color: transparent;
     height: 1.9em;
 }
-#navContainer li:first-of-type button svg{
+.navContainer li:first-of-type button svg{
     fill: #0000A4;
     height: 100%;
 }
-#navContainer li:first-of-type a {
+.navContainer li:first-of-type a {
     display: flex;
     align-items: center;
 }
-#navContainer li:first-of-type svg {
+.navContainer li:first-of-type svg {
     font: 1.9em;
     height: 1.9em;
     width: auto;
     margin-left: .5em;
 }
-#navContainer li:nth-of-type(2) {
+.navContainer li:nth-of-type(2) {
     background-color: #0000A4;
     padding: 1em;
     width: 100%;
     order: 1; 
     
 }
-#navContainer li:nth-of-type(2) form {
+.navContainer li:nth-of-type(2) form {
     width: 100%;
 }
-#navContainer li:nth-of-type(2) form input {
+.navContainer li:nth-of-type(2) form input {
     outline: none;
     border: none;
     height: 3em;
@@ -206,106 +206,106 @@ body {
     border-radius: 1.5em;
     font-size: .9em;
 }
-#navContainer li:nth-of-type(2) form input {
+.navContainer li:nth-of-type(2) form input {
     background-image: url(../images/icons/loop.svg);
     background-size: 1.7em auto;
     background-repeat: no-repeat;
     background-position: calc(100% - 1em) center; 
 }
-#navContainer li:last-child {
+.navContainer li:last-child {
     margin-right: 1em;
     margin-left: auto;
 }
-#navContainer li:last-child ul {
+.navContainer li:last-child ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#navContainer li:last-child ul li {
+.navContainer li:last-child ul li {
     background-color: transparent;
     padding: 0;
-    margin-left: 1em;
+    margin: 0 0 0 1em;
     
 }
-#navContainer li:last-child ul li:nth-of-type(2) {
+.navContainer li:last-child ul li:nth-of-type(2) {
     order: 0;
 }
-#navContainer li:last-child ul li a{
+.navContainer li:last-child ul li a{
     display: flex;
     align-items: center;
     width: auto;
     
     
 }
-#navContainer li:last-child ul li a svg{
+.navContainer li:last-child ul li a svg{
     width: auto;
     height: 1.6em;
 }
 
-#secondNav {
+.secondNav {
     display: none;
     justify-content: space-between;
     color: #333333;;
 }
 
-#secondNav ul {
+.secondNav ul {
     display: flex;
     background-color: #FFFFFF;
 }
-#secondNav ul:first-child {
+.secondNav ul:first-child {
     justify-content: flex-start;
 }
-#secondNav ul:last-child {
+.secondNav ul:last-child {
     justify-content: flex-end;
     font-size: .9em;
 }
-#secondNav ul:last-child li a {
+.secondNav ul:last-child li a {
     text-decoration: none;
     color: #333333;
 }
-#secondNav ul li {
+.secondNav ul li {
     display: flex;
     align-items: center;
     margin: 0 1em;
 }
-#secondNav ul li svg{
+.secondNav ul li svg{
     transform: rotate(90deg);
     height: .8em;
     margin-left: .5em;
     
 }
 
-#secondNav ul li svg path{
+.secondNav ul li svg path{
     fill: #333333;
 }
 
-#thirdNav {
+.thirdNav {
     display: none;
     color: #333333;;
     background-color: #F0F6FF;
 }
-#thirdNav ul {
+.thirdNav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
-#thirdNav ul li {
+.thirdNav ul li {
     margin: 0 1em;
 }
-#thirdNav ul li a {
+.thirdNav ul li a {
     color: #333333;
     text-decoration: none;
 }
-#thirdNav ul li:last-child a {
+.thirdNav ul li:last-child a {
     font-size: 1.6em;
     font-family: 'Eczar', serif;
     font-weight: 700;
     color: #0100A4;
 }
-#thirdNav ul li:last-child a svg{
+.thirdNav ul li:last-child a svg{
     height: .7em;
 }
-#thirdNav ul li:last-child a svg path {
+.thirdNav ul li:last-child a svg path {
     fill: #0100A4;
 }
 
@@ -325,7 +325,7 @@ body {
         flex-flow: column;
         align-items: center;
     }
-    #topbar {
+   .topbar {
         height: 2em;
         display: flex;
         width: 100%;
@@ -334,14 +334,14 @@ body {
         
     }
     
-    #navContainer {
+   .navContainer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         flex-wrap: no-wrap;
         max-width: 78em;
     }
-    #navContainer {
+    .navContainer {
         
         background-color: #0000A4;
         display: flex;
@@ -349,46 +349,53 @@ body {
         align-items: center;
         flex-wrap: no-wrap;
     }
-    #navContainer li svg path{
+    .navContainer li svg path{
         fill: #FFFFFF;
     }
-    #navContainer li:first-of-type svg {
+    .navContainer li:first-of-type svg {
         margin-left: 1em;
     }
     
-    #navContainer li:nth-of-type(2) {
+    .navContainer li:nth-of-type(2) {
         padding: 1em;
         width: 30em;
         order: 0; 
     }
-    #navContainer li:last-child {
+    .navContainer li:last-child {
         margin-left: 0;
     }
-    #navContainer li:last-child ul li:nth-of-type(2) {
+    .navContainer li:last-child ul li:nth-of-type(2) {
         width: auto;
     }
-    #secondNav {
+    .secondNav {
         display: flex;
         width: 100%;
         max-width: 78em;
     }
-    #thirdNav {
+    .thirdNav {
         display: flex;
         width: 100%;
         justify-content: center;
     }
-    #thirdNav ul {
+    .thirdNav ul {
         flex-grow: 1;
         max-width: 78em;
     }
 }
 
+
+
+
+
 /* MAIN */
 
-main:not(#hero, #service) {
+main:not(#hero, .sideMenu, .sideMenuActive) {
     padding: 0 1em;
-    position: relative;
-    
+    position: relative; 
+}
+.noscroll {
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 /*SECTIE1*/
@@ -821,73 +828,124 @@ main section {
     }
 }
 
-@media (min-width: 900px) {
-    .service {
-        background-color: #0000A4;
-        max-width: 100vw;
-        display: flex;
-        justify-content: center;
-    }
-    .service ul {
-        max-width: 77em;
-    }
-}
+
 /*Service*/
 
 /*MENU*/
 
-#sideMenu {
-    position: fixed;
+.sideMenu {
+    position: absolute;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100%;
+    max-width: 35em;
     height: 100%;
     z-index: 300;
-    background-color: #ffffff;
+    background-color: #E5E5E5;
     transition: .3s;
     transform: translateX(-100%);
+    overflow-y: auto;
 }
-.sideMenuOpen {
+.sideMenuActive{
     transform: translateX(0);
+    padding: 0;
     
 }
-#sideMenu div {
+.sideMenu div {
+    top: 0;
+    background-color: #FFFFFF;
+    position: sticky;
     padding: 1em 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    border-bottom: solid;
-    border-color: #1A1AB1;
-    border-width: 2px;
+    border-bottom: #1A1AB1 solid 2px;
     width: 100%;
-    
 }
-#sideMenu div img {
+.sideMenu div button {
+    background: none;
+    border: none;
+}
+.sideMenu div button img {
     padding: 0 1em;
     height: 1.9em;
     width: auto;
 }
-#sideMenu ul{
+.sideMenu ul{
+    background-color: #FFFFFF;
+    width: 100%;
+    margin-top: 1em;
+}
+.sideMenu ul li{
+    width: 100%;
+    border-top: #AAAAAA solid 2px;
+}
+.sideMenu ul li:last-of-type {
+    border-bottom: #AAAAAA solid 2px;
+}
+.sideMenu ul li a{
+    padding: 1.6em;
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: #000000;
+}
+.sideMenu > ul:first-of-type {
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(6em, 1fr));
+    grid-gap: 1em;
+    padding: 1em;
+    margin-top: 0;
     
 }
-#sideMenu ul li {
+.sideMenu > ul:first-of-type li {
+    border: none;
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 30%;
+    width: 6em;
     
 }
-#sideMenu ul li img {
+.sideMenu > ul:first-of-type li img {
     border-radius: 50%;
     width: 5em;
     height: 5em;
     background-color: #CEE9FC;
     padding: 1em;
 }
+.sideMenu > ul:nth-of-type(2) li a {
+    color: #00f;
+}
+.sideMenu > ul:nth-of-type(2) li:last-of-type {
+    background-color: #CEE9FC;
+}
+.sideMenu > ul:nth-of-type(2) li:last-of-type h1 {
+    color: #0000A4;
+    margin-right: auto;
+}
+.sideMenu ul li a img {
+    height: 1.1em;
+    margin-right: .6em;
+}
+.sideMenu ul li a h4 {
+    font-size: .9em;
+    margin-right: auto;
+}
+.sideMenu ul li a svg {
+    height: 1.1em;
+}
+.sideMenu ul li a svg path {
+    fill: #00f;
+}
 
+@media (min-width: 900px) {
+    .sideMenu {
+        display: none;
+    }
+}
 /*BANNER*/
 
 main .promoBanner {
@@ -913,7 +971,7 @@ main .promobanner a {
 
 
 /*SERVICE*/
-#service {
+.service {
     width: 100vw;
     position: static;
     color: white;
@@ -923,7 +981,7 @@ main .promobanner a {
     display: flex;
     justify-content: center;
 }
-#service ul {
+.service ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -932,7 +990,7 @@ main .promobanner a {
     max-width: 77em;
     
 }
-#service ul li {
+.service ul li {
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -940,19 +998,19 @@ main .promobanner a {
     margin: 2em 0;
 }
 
-#service ul li h1 {
+.service ul li h1 {
     color: #FFFFFF;
     
 }
-#service ul li img {
+.service ul li img {
     height: 2.9em;
     padding: 0 2em;
 }
-#service ul li div {
+.service ul li div {
    
     /* max-width: 30em; */
 }
-#service ul li div h5 {
+.service ul li div h5 {
     font-size: .9em;
     font-weight: 600;
     margin: 0;
@@ -960,37 +1018,47 @@ main .promobanner a {
     color: #FFFFFF;
     
 }
-#service ul li div p {
+.service ul li div p {
     font-size: .9em;
     font-weight: 100;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
 }
-#service ul li div p a {
+.service ul li div p a {
     color: white;
     text-decoration: underline;
 }
-#service ul li div p a:hover {
+.service ul li div p a:hover {
     text-decoration: none;
 }
 @media (min-width: 600px) {
-    #service ul {
+    .service ul {
         justify-content: space-evenly;
     }
-    #service ul li {
+    .service ul li {
         flex-grow: 1;
         width: 33%;
     }
     
 }
-
+@media (min-width: 900px) {
+    .service {
+        background-color: #0000A4;
+        max-width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .service ul {
+        max-width: 77em;
+    }
+}
 footer {
     display: flex;
     align-items: center;
     flex-flow: column;
 }
-#footerContent {
+.footerContent {
     width: 100%;
     max-width: 77em;
 }
@@ -1023,7 +1091,7 @@ footer .footersitemap {
 
 
 
-#social {
+.social {
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -1031,10 +1099,10 @@ footer .footersitemap {
     height: auto;
     
 }
-#social h5 {
+.social h5 {
     margin-bottom: .5em;
 }
-#social ul {
+.social ul {
     display: flex;
     flex-flow: row;
     flex-wrap: wrap;
@@ -1043,53 +1111,55 @@ footer .footersitemap {
     justify-content: center;
     width: 100%;
 }
-#social ul li {
+.social ul li {
     border-bottom-style: none;
    
 }
-@media (min-width: 500px) {
-    #social ul li{
-        margin: 0 .6em;
-    }
-    
-}
-#social ul li a {
+
+.social ul li a {
     text-decoration: none;
 }
-#social ul li a img {
+.social ul li a img {
     width: auto;
     height: 1.4em;
     
 }
-#social p a {
+#link a {
     display: inline;
     color: #00f;
 }
+@media (min-width: 500px) {
+    .social ul li{
+        margin: 0 .6em;
+    }
+    
+}
 
-#footerlogo {
+
+.footerlogo {
     width: 65%;
     max-width: 25em;
 }
 @media (min-width: 600px){
-    #footerlogo {
+    .footerlogo {
         width: 65%;
         max-width: 25em;
         margin-top: 1em;
     }
 }
 
-#winkelwaarborg {
+.winkelwaarborg {
     font-size: .8em;
     padding: 0 3em;
 }
-#winkelwaarborg ul {
+.winkelwaarborg ul {
     display: flex;
     justify-content: center;
     flex-flow: row;
     flex-wrap: wrap;
     
 }
-#winkelwaarborg ul li {
+.winkelwaarborg ul li {
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -1099,17 +1169,17 @@ footer .footersitemap {
     border-bottom-style: none;
     
 }
-#winkelwaarborg ul li img{
+.winkelwaarborg ul li img{
     margin-right: .6em;
     height: 1.4em;
     width: auto;
 }
-#winkelwaarborg ul li a{
+.winkelwaarborg ul li a{
     text-decoration: none;
     padding: 0 .4em;
 }
 
-#winkelwaarborg ul li a:first-of-type {
+.winkelwaarborg ul li a:first-of-type {
     text-decoration: underline;
 }
 
@@ -1126,7 +1196,7 @@ footer .footersitemap {
         flex-wrap: wrap;
         align-items: flex-start;
         margin-top: 1em;
-        max-width: 120%;
+        max-width: 77em;
     }
     footer ul li {
         align-items: flex-start;
@@ -1139,7 +1209,7 @@ footer .footersitemap {
         border-bottom-style: none;
         
     }
-    footer ul li:last-child {
+    .footerContent ul li:last-child:not(.social ul li:last-of-type) {
         width: 100%;
     }
     footer ul li ul {
@@ -1179,9 +1249,6 @@ footer .footersitemap {
     }
     footer section {
         flex-grow: 1;
-        
-    }
-    footer section ul {
         
     }
     footer ul li:last-child {

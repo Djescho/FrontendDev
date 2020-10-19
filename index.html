@@ -17,7 +17,7 @@
 
 <body>
     <header>
-        <div id="topbar">
+        <div class="topbar">
             <ul>
                 <li><span>Gratis</span> verzending vanaf 20,-</li>
                 <li>Bezorging dezelfde dag, 's avonds of in het weekend*</li>
@@ -29,7 +29,7 @@
         </div>
 
         <nav>
-            <ul id="navContainer">
+            <ul class="navContainer">
                 <li>
                     <button id="menuButton">
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -290,7 +290,7 @@
             </ul>
         </nav>
 
-        <section id="secondNav">
+        <section class="secondNav">
             <ul>
                 <li>Catergorien <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 451.846 451.847"
@@ -346,7 +346,7 @@
             </ul>
         </section>
 
-        <section id="thirdNav">
+        <section class="thirdNav">
             <ul>
                 <li><a href="">Najaarscollectie</a></li>
                 <li><a href="">Kinderboekenweek</a></li>
@@ -617,9 +617,11 @@
 
         </section>
 
-        <section id="sideMenu">
+        <section class="sideMenu">
             <div>
-                <img class="closeButton" src="./images/icons/kruis.svg" alt="">
+                <button id="closeButton">
+                    <img src="./images/icons/kruis.svg" alt="kruis">
+                </button>
             </div>
             <ul>
                 <li><img src="" alt="">
@@ -663,6 +665,174 @@
                     <h4>CatA</h4>
                 </li>
             </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/light-bulb.svg" alt="">
+                        <h4>Cadeaus en inspiratie</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/price-tag.svg" alt="">
+                        <h4>Aanbiedingen</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="">
+                        <h1>Electronica deals</h1>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/MijnAccountBlauw.svg" alt="">
+                        <h4>Mijn account</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/headset.svg" alt="">
+                        <h4>Klantenservice</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./images/icons/netherlands.svg" alt="">
+                        <h4>Kies jouw winkel</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="" alt="">
+                        <h4>Over bol.com</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="">
+                        <h4>Cadeaubon</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="" alt="">
+                        <h4>Zakelijk</h4>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                            viewBox="0 0 451.846 451.847" style="enable-background:new 0 0 451.846 451.847;"
+                            xml:space="preserve" class="">
+                            <g>
+                                <g>
+                                    <path
+                                        d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"
+                                        data-original="#000000" class="active-path" data-old_color="#000000" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
 
         </section>
 
@@ -672,7 +842,7 @@
     </main>
 
     <footer>
-        <section id="service">
+        <section class="service">
             <ul>
                 <li>
                     <h1>Service &#38; contact</h1>
@@ -696,10 +866,10 @@
             </ul>
         </section>
 
-        <section id="footerContent">
+        <section class="footerContent">
             <ul>
                 <li>
-                    <h6><a href="">Klantenservice</a></h6>
+                    <h6><a href="klantenservice.html">Klantenservice</a></h6>
                     <ul class="footersitemap">
                         <li><a href="">Contanct opnemen</a></li>
                         <li><a href="">Bestellen &#38; Leveren</a></li>
@@ -736,7 +906,7 @@
                     </ul>
                     <img src="./images/icons/Arrows/arrowGrey.svg" alt="" class="icon">
                 </li>
-                <li id="social">
+                <li class="social">
                     <h5>Wil je ons volgen?</h5>
                     <ul>
                         <li><a href="#"><img src="./images/icons/social/facebook.svg" alt=""></a></li>
@@ -747,17 +917,17 @@
                         <li><a href="#"><img src="./images/icons/social/twitter.svg" alt=""></a></li>
                         <!--                Icons made by <a href="https://www.flaticon.com/authors/pixel-perfect" title="Pixel perfect">Pixel perfect</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>-->
                     </ul>
-                    <p><a href="">Meld je aan</a> voor onze nieuwsbrief</p>
+                    <p id="link"><a href="">Meld je aan</a> voor onze nieuwsbrief</p>
                 </li>
             </ul>
 
         </section>
 
 
-        <img id="footerlogo" src="./images/icons/LogoBlauwTekst.jpg" alt="">
+        <img class="footerlogo" src="./images/icons/LogoBlauwTekst.jpg" alt="">
         <!--        bron afbeelding: https://pers.bol.com/beeld-archief-item/logo-bol-com-pay-off-rgb/-->
 
-        <section id="winkelwaarborg">
+        <section class="winkelwaarborg">
             <ul>
                 <li><img src="./images/icons/thuiswinkelLogo.png" alt=""> Geldt voor aankopen bij <a href="">
                         Thuiswinkel-leden</a></li>
