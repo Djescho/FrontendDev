@@ -69,7 +69,7 @@ De site staat er inmiddels. Op hemt moment ben ik bezig met het verbeteren van s
 | Celine | Djescho | Floris |
 |--------|:-------:|-------:|
 | Responsiveness afbeeldingsgrootte | Hoeveel animatie moet er in zitten als je responsive hebt gekozen | |
-| Zoekbalk 'pop-up' | Max width opgelost met flexbox, is this the way?Max width opgelost met flexbox, is this the way? | Items in een gradient op hun plek laten bij responsive |
+| Zoekbalk 'pop-up' | Max width opgelost met flexbox, is this the way? | Items in een gradient op hun plek laten bij responsive |
 | Tekst op een makkelijke manier responsive uitlijnen |  |  |
 | Responsiveness van hamburger menu icoon naar menu-items naast elkaar uigelijnd in navigatiebalk |  |  |
 | Timing tekst animaties |  |  |
