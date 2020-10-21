@@ -105,7 +105,11 @@ button {
     z-index: 100;
     left: 0em;
 }
-
+.scrollbutton:active {
+    animation-duration: .3s;
+    background-color: #00f;
+    
+}
 .scrollbutton img {
     width: 1.1em;
     height: auto;
@@ -140,7 +144,9 @@ body {
 }
 
 /*HEADER*/
-
+header a:active {
+    color: #0100A4;
+}
 .topbar {
 
     height: 3em;
@@ -224,7 +230,7 @@ body {
     width: 100%;
 }
 
-.navContainer li:nth-of-type(2) form input {
+.navContainer li:nth-of-type(2) form input[type=search] {
     outline: none;
     border: none;
     height: 3em;
@@ -374,7 +380,9 @@ body {
         flex-flow: column;
         align-items: center;
     }
-
+    header a:hover {
+        text-decoration: underline;
+    }
     .topbar {
         height: 2em;
         display: flex;
@@ -408,7 +416,14 @@ body {
     .navContainer li:first-of-type svg {
         margin-left: 1em;
     }
-
+    .navContainer li:nth-of-type(2) form input[type=search]:hover {
+        transition: ease-in .25s;
+        width: 120%;
+    }
+    .navContainer li:nth-of-type(2) form input[type=search]:focus {
+        background-color: #F0F6FF;
+        width: 125%;
+    }
     .navContainer li:nth-of-type(2) {
         padding: 1em;
         width: 30em;
@@ -463,6 +478,15 @@ main section {
     padding: .1em 1em;
     color: #0000A4;
     position: relative;
+}
+main section a:hover {
+    text-decoration: underline;
+}
+main section a:active {
+    color: #0000A4;
+}  
+main section a:focus {
+    transform: rotate(2deg);
 }
 
 @media (min-width: 600px) {
@@ -574,7 +598,13 @@ main section {
     height: 100%;
     color: #0000A4;
 }
-
+#promoSlider ul li a:first-child:active {
+    background-color: #0000A4;
+}
+#promoSlider ul li:hover {
+    transform: rotate(2deg);
+    transition-duration: .2s;
+}
 #promoSlider ul li:first-of-type a:first-child {
     color: #FFFFFF;
 }
@@ -1248,7 +1278,15 @@ footer {
     align-items: center;
     flex-flow: column;
 }
-
+footer section a:hover {
+    text-decoration: underline;
+}
+footer section a:active {
+    color: #0000A4;
+}
+footer section a:focus {
+    text-decoration: underline; 
+}
 .footerContent {
     width: 100%;
     max-width: 77em;
