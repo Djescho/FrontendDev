@@ -11,26 +11,44 @@
 
 ## Eindgesprek (week 7/8)
 
-De laadste loodsjes wogen voor mij het zwaarst. Ik kwam er vrij last-minute achter dat er nog best wel wat bugs in de site zaten, die me niet waren opgevallen en die niet zomaar 1,2,3 waren opgelost.
-Dit was dan ook soms erg frustrerend. svg's zijn een nachtmerrie om mee te werken dus soms staan er svg's in een img tag. Nu beide pagin's af zijn mag het eindresultaat er wel wezen. Mijn site en de echte bol.com site lijken heel erg veel op elkaar (wat soms ook voor verwarring zorgde).
-de site is 100%responsice vanaf 320px.
-Nu de site af is heb ga ik de volgende keer de analyse anders aanpakken.
-Ik heb nu per sectie gewerkt, maar niet gekeken naar de overeenkomsten bonnenn de secties. Hierdoor is de css erg lang, vaak herhalend en soms inconsistent. Door een beter analyse te maken de volgene keer hoop ik een stuk minder individuele classes en id's nodig te hebben. Zo zou ik de volgende keer een speciale class maken voor scrollbare lijsten. Ook zou ik nog een keer gaan kijken naar de heading indeling van de pagina's.
+De laatste loodjes wogen voor mij het zwaarst. Ik kwam er achter dat er nog best wel wat bugs in de site zaten die me niet waren opgevallen, en die niet zomaar 1, 2, 3 waren opgelost. Dit was dan ook soms erg frustrerend. Ik ben in dit project voor het eerst gaan werken met svg's en wat een nachtmerrie. Omdat ik eerst niet begreep hoe ze werkte heb ik flink wat svg's in <img> tags geplaatst. Uiteindelijk ben ik naar svg's als elementen plaatsen overgegaan, waardoor er soms nog in de code <img> tags zitten met daarin een svg. Dit is ook de rede van de vele foto's in de 'img' map. Ik ben er helaas niet aan toegekomen om dit 100% netjes te maken.
 
-Ik heb dit vak als ontzettend leerzaam ervaten. Ik heb het gevoel dat ik een stuk meer weet, en mijn kennis beter kan toepassen. Ook ik heb nu een klein schetsboekje.
+Uiteindelijk heb ik besloten om de klantenservice pagina als pagina 2 uit te werken. Eerst wilde ik de product detail pagina uitwerken, maar deze bleek nog veel ingewikkelder in elkaar te zitten dan de homepagina. De items staan in grid uitgelijnd, waarbij ze op de mobiele versie naar een één kolom's weergave gaan. Het probleem hiermee is dat de items op een andere volgorde terecht komen binnen het grid en dit kreeg ik niet voor elkaar. Ook zit er een lightbox in deze pagina, maar de code die ik hervoor had gevonden begreep ik niet en werkte niet.
 
-over github: Er is iets niet helemaal goed gegaan met het uploaden van de afbeeldingenm vandaar dat de rootfolder zovol staat. Dit heeft geen effect op de website.
+Na veel geploeter mag het eindresultaat er zeker wezen. Ik heb meerdere keren gehad dat ik mijn versie van de bol site verwarde met de echte versie. De site is 100% responsive vanaf 320px. Ik ben ontzettend onder de indruk van mijn eigen opgebouwde skillset en het resultaat dat er uit is gekomen. Het beste was toen ik eenmaal doorhad hoe ik secties super snel in elkaar kon zetten, omdat de css die ik schreef steeds beter begon te begrijpen.
+
+Nu de site af is heb ik even kritisch naar mijn code gekeken en ben ik een aantal verbeterpunten gevonden, die ik mee neem naar mijn volgende project. Deze heb ik hieronder beschreven.
+
+  Analyse
+
+Door de volgende keer een website beter te analyseren hoop ik sneller overeenkomsten te vinden tussen verschillende secties. Nu heb ik heel vaak dezelfde stijl in verschillende secties toegepast, terwijl dit simpelweg ook met een class kan. Ook had ik dan een veel beter beeld kunnen krijgen van de verschillende soorten headings. Omdat ik alles al zo ver ingecodeerd had, heb ik best vaak headers moeten overschrijven in css met een andere stijl.
+
+  Van boven naar beneden werken
+
+Door mijn enthousiasme ben ik de site vrij chaotisch begonnen. Zo had ik eerst de header af op mobiel, toen ging ik door naar 2 sections in de main, toen half aan de footer begonnen, kortom het ging niet heel geordend. Toen ik dit op de tweede pagina wel ging doen ging het coderen een stuk sneller en efficiënter.
+
+  Afbeeldingen
+
+Ik moet heel strak aanhouden dat ik voor iconen svg's gebruik en dat ik geen svg's in <img> tags ga plaatsen.
+
+  Media queries
+
+Omdat ik zo chaotisch te werk was gegaan stonden mijn media queries overal. Het beste werkt als je de media querie direct onder een sectie plaatst om alles netjes overzichtelijk te houden. Dit heb ik voor 90% kunnen fixen in mi css, maar alleen de footer staat een beetje apart aangegeven.
+
+  links en buttons
+
+Ik was vergeten om in heel veel list items <a> tags te zetten waardoor de website eerst niet navigeerbaar was. Dt is nu opgelost, maar zorgde voor de nodige frustraties en moeilijkheden met css. Ook was ik vergeten om states aan links en buttons te geven, maar dit is inmiddels opgelost
+
+Ik heb dit vak als ontzettend leerzaam en leuk ervaren. Ik heb het gevoel dat ik een stuk meer weet, en mijn kennis beter kan toepassen. ik wil hierna ook graag blok tech gaan doen en a, ook ik heb nu een klein schetsboekje om containers in uit te werken..
+
+over github: Er is iets niet helemaal goed gegaan met het uploaden van de afbeeldingen vandaar dat de rootfolder zo vol staat. Dit heeft geen effect op de website.
 
 **Screenshot(s):**
 
-![](docs/screenshots/voortgangV7-1.png)
-![](docs/screenshots/voortgangV7-2.png)
-![](docs/screenshots/voortgangV7-3.png)
-![](docs/screenshots/voortgangV7-4.png)
-![](docs/screenshots/voortgangV7-5.png)
-![](docs/screenshots/voortgangV7-6.png)
-![](docs/screenshots/voortgangV7-7.png)
-![](docs/screenshots/voortgangV7-8.png)
+| ![](docs/screenshots/voortgangV7-1.png) | ![](docs/screenshots/voortgangV7-7.png) |
+| ![](docs/screenshots/voortgangV7-2.png) | ![](docs/screenshots/voortgangV7-8.png) |
+| ![](docs/screenshots/voortgangV7-3.png) | ![](docs/screenshots/voortgangV7-5.png) |
+| ![](docs/screenshots/voortgangV7-4.png) | ![](docs/screenshots/voortgangV7-6.png) |
 
 
 
