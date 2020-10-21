@@ -3,9 +3,9 @@
 
 
 ## Bronnenlijst
-1. -Iconen van https://www.flaticon.com/-
-2. -Producten van https://www.bol.com/-
-3. -bol.com logo van https://pers.bol.com/beeld-archief-item/bol-com-logo/-
+1. Iconen van https://www.flaticon.com/-
+2. Alle (product)afbeeldingen van https://www.bol.com/-
+3. Bol.com logo van https://pers.bol.com/beeld-archief-item/bol-com-logo/-
 
 
 
