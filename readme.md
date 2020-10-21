@@ -45,12 +45,14 @@ over github: Er is iets niet helemaal goed gegaan met het uploaden van de afbeel
 
 **Screenshot(s):**
 
-| ![](docs/screenshots/voortgangV7-1.png) | ![](docs/screenshots/voortgangV7-5.png) |
-| ![](docs/screenshots/voortgangV7-2.png) | ![](docs/screenshots/voortgangV7-6.png) |
-| ![](docs/screenshots/voortgangV7-3.png) | ![](docs/screenshots/voortgangV7-7.png) |
-| ![](docs/screenshots/voortgangV7-4.png) | ![](docs/screenshots/voortgangV7-8.png) |
-
-
+![](docs/screenshots/voortgangV7-1.png) 
+![](docs/screenshots/voortgangV7-2.png)  
+![](docs/screenshots/voortgangV7-3.png)
+![](docs/screenshots/voortgangV7-4.png)  
+![](docs/screenshots/voortgangV7-5.png)
+![](docs/screenshots/voortgangV7-6.png)
+![](docs/screenshots/voortgangV7-7.png)
+![](docs/screenshots/voortgangV7-8.png)
 
 ## Voortgang 3 (week 6)
 
